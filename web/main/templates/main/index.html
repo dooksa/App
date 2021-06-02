@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+хаюхай
+{% endblock %}
+
+{% block content %}
+<h1>Hi</h1>
+    {% for el in tasks %}
+
+        <div>
+            <h3>{{ el.title }}</h3>
+            <p>{{ el.task}}</p>
+        </div>
+
+    {% endfor %}
+{% endblock %}
